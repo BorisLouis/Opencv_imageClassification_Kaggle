@@ -1,84 +1,15 @@
 # Opencv_imageClassification_Kaggle
 
-🧠 OpenCV University – Deep Learning Kaggle Project
+Image Classification from Scratch — CNN Training Journey
+A project documenting the full process of building and training a Convolutional Neural Network from scratch for a 4-class animal image classification task (cow, elephant, horse, spider), achieving 88%+ validation accuracy with only ~4,000 training images and a ~150k parameter model.
+The repository covers the complete experimentation journey including:
 
-Image Classification with CNNs
+Debugging a broken training pipeline (rescaling bug, disconnected layers)
+Reducing a 1.5M parameter model to 150k parameters without losing performance
+Understanding and fixing overfitting through dropout, batch normalization and data augmentation
+Systematic experiment tracking and iterative improvement
+Achieving 85%+ Kaggle test accuracy training entirely from scratch
 
-📌 Overview
+Key learnings: more parameters do not mean better generalization, small validation sets cause noisy curves, and systematic one-change-at-a-time experimentation is essential for meaningful progress.
+Stack: Python, TensorFlow/Keras, Google Colab
 
-This project was developed as part of the OpenCV University Deep Learning course, structured as a Kaggle-style image classification competition.
-
-The objective was to design, train, and optimize a deep neural network to classify images into multiple categories under realistic competition constraints (limited data, validation scoring, performance benchmarking).
-
-Rather than treating this as a coursework exercise, the project was approached as a full applied deep learning pipeline — including data preprocessing, model experimentation, performance evaluation, and optimization.
-
-🎯 Problem Statement
-
-Multi-class image classification
-
-Supervised learning
-
-Competition-style evaluation
-
-Performance measured on validation/test leaderboard
-
-🛠️ Technical Approach
-1️⃣ Data Pipeline
-
-Custom dataset loading
-
-Data augmentation (random flips, rotations, normalization)
-
-Train/validation split strategy
-
-Batch-based training
-
-2️⃣ Model Architectures Explored
-
-CNN trained from scratch
-
-Transfer learning (if applicable – modify if used)
-
-Fine-tuning strategies
-
-Hyperparameter optimization (learning rate, batch size, etc.)
-
-3️⃣ Training Strategy
-
-Cross-entropy loss
-
-Optimizer: (Adam / SGD – adjust accordingly)
-
-Learning rate scheduling
-
-Early stopping / checkpointing
-
-📊 Results
-
-Final validation accuracy: XX%
-
-Best model: (e.g., Fine-tuned ResNet18)
-
-Training stability improvements after hyperparameter tuning
-
-Observed validation noise reduction strategies
-
-Include:
-
-Training vs validation accuracy plot
-
-Confusion matrix
-
-Example predictions
-
-📈 Key Learnings
-
-Impact of batch size on convergence and generalization
-
-Trade-offs between training from scratch vs transfer learning
-
-Importance of augmentation in small datasets
-
-Model overfitting behavior in competition settings
-
-Validation curve smoothing and interpretation
